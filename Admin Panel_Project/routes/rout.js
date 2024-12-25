@@ -1,0 +1,17 @@
+const express = require("express")
+const rout = express.Router()
+const ctl = require("../controller/Ctl")
+
+rout.get("/",ctl.SignUp)
+rout.get("/dashbord",ctl.Dashbord)
+rout.post("/sendData",ctl.SignUpData)
+rout.get("/login",ctl.Login)
+rout.post("/loginData",ctl.LoginData)
+rout.get("/logout",ctl.LogOut)
+rout.get("/form",ctl.Form)
+rout.post("/formdata",ctl.FormData)
+rout.get("/table",ctl.Table)
+rout.get("/delete",ctl.Delete)
+rout.get("/edit",ctl.Edit)
+rout.post("/update",ctl.UpdateData)
+module.exports = rout
