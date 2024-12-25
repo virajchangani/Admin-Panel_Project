@@ -11,7 +11,7 @@ app.use(cookie())
 app.use("/",require("./routes/rout"));
 
 app.use("/",express.static(path.join(__dirname,"public_1")));
-app.use(express.static(path.join(__dirname,"public")));
+
 
 
 
