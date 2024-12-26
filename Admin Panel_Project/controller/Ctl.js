@@ -68,7 +68,7 @@ module.exports.Table=async(req,res)=>{
 
 module.exports.Delete = async(req,res)=>{
     let data = await MainSchema.findByIdAndDelete(req.query.id)
-    data && res.redirect("/");
+    data && res.redirect("/table");
 }
 module.exports.Edit = async(req,res)=>{
     if(req.cookies.adminData){
